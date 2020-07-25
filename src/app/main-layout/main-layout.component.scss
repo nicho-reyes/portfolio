@@ -1,0 +1,35 @@
+:host {
+  main {
+    margin-left: 5rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    section {
+      min-height: 100vh;
+
+      padding: 10rem 10rem 2rem 2rem;
+    }
+  }
+
+  .fa-primary {
+    color: #ff7eee;
+  }
+
+  .fa-secondary {
+    color: #df49a6;
+  }
+
+  .fa-primary,
+  .fa-secondary {
+    transition: var(--transition-speed);
+  }
+
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    main {
+      margin: 0;
+    }
+  }
+}

@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  //--text-primary: #b6b6b6;
+  --text-primary: #fff;
+  --text-secondary: #ececec;
+  --nav-primary: #0a192f;
+  --nav-secondary: #64ffdb;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+
+body {
+  color: white;
+  background: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(136, 146, 176);
+}
+
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --nav-secondary: #8892b0;
+  --btn-primary: #64ffdb;
+  --btn-secondary: #8892b0;
+}
+
+.light {
+  --text-primary: #1f1f1f;
+  --text-secondary: #000000;
+  --bg-primary: #ffffff;
+  --bg-secondary: #e4e4e4;
+}
+
+.solar {
+  --text-primary: #576e75;
+  --text-secondary: #35535c;
+  --bg-primary: #fdf6e3;
+  --bg-secondary: #f5e5b8;
+}
+
+.theme-icon {
+  display: none;
+}
+
+.dark #darkIcon {
+  display: block;
+}
+
+.light #lightIcon {
+  display: block;
+}
+
+.solar #solarIcon {
+  display: block;
+}
