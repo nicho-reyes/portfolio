@@ -9,7 +9,59 @@
     section {
       min-height: 100vh;
 
-      padding: 10rem 10rem 2rem 2rem;
+      padding: 5rem 10rem 5rem 10rem;
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      h2, h3 {
+        font-size: 3rem;
+      }
+
+      p {
+        width: 50%;
+      }
+
+      .btn-container {
+        padding-top: 2rem;
+
+        a.btn {
+          &:hover {
+            background: var(--bg-secondary);
+          }
+
+          padding: 1.25rem;
+          border: 1px solid #64ffdb;
+          text-decoration: none;
+          color: var(--nav-secondary);
+          transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        }
+      }
+
+      .tabs {
+        display: flex;
+
+        .tab {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .tabcontent {
+          display: none;
+          flex-direction: column;
+          margin-left: 1rem;
+
+          h1 {
+            margin: 0;
+          }
+
+          &.active {
+            display: flex;
+          }
+        }
+      }
+
     }
   }
 
