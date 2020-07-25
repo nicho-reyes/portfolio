@@ -45,6 +45,18 @@
         .tab {
           display: flex;
           flex-direction: column;
+
+          a {
+            &:hover {
+              background: var(--bg-secondary);
+            }
+
+            padding: 1.25rem;
+            //border: 1px solid #64ffdb;
+            text-decoration: none;
+            color: var(--nav-secondary);
+            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          }
         }
 
         .tabcontent {

@@ -49,24 +49,36 @@
 
         <div class="tabs">
             <div class="tab">
-                <button class="tablinks active">London</button>
-                <button class="tablinks">Paris</button>
-                <button class="tablinks">Tokyo</button>
+                <a href="#" class="tablinks" (click)="tabMenuItemClick($event, oqas)" [class.active]="tabActive(oqas)">{{oqas}}</a>
+                <a href="#" class="tablinks" (click)="tabMenuItemClick($event, tworks)" [class.active]="tabActive(tworks)">{{tworks}}</a>
+                <a href="#" class="tablinks" (click)="tabMenuItemClick($event, tm)" [class.active]="tabActive(tm)">{{tm}}</a>
+                <a href="#" class="tablinks" (click)="tabMenuItemClick($event, smartmatic)" [class.active]="tabActive(smartmatic)">Smartmatic</a>
+                <a href="#" class="tablinks" (click)="tabMenuItemClick($event, sds)" [class.active]="tabActive(sds)">{{sds}}</a>
             </div>
 
             <!-- Tab content -->
-            <div id="London" class="tabcontent active">
-                <h1>London</h1>
+            <div class="tabcontent" [class.active]="tabActive(oqas)">
+                <h1>Fullstack Developer @{{oqas}}</h1>
                 <p>London is the capital city of England.</p>
             </div>
 
-            <div id="Paris" class="tabcontent">
-                <h1>Paris</h1>
+            <div class="tabcontent" [class.active]="tabActive(tworks)">
+                <h1>Software Developer @{{tworks}}</h1>
                 <p>Paris is the capital of France.</p>
             </div>
 
-            <div id="Tokyo" class="tabcontent">
-                <h1>Tokyo</h1>
+            <div class="tabcontent" [class.active]="tabActive(tm)">
+                <h1>Business Applications Engineer @{{tm}}</h1>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div class="tabcontent" [class.active]="tabActive(smartmatic)">
+                <h1>Software Engineer @{{smartmatic}}</h1>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div class="tabcontent" [class.active]="tabActive(sds)">
+                <h1>.Net Developer @{{sds}}</h1>
                 <p>Tokyo is the capital of Japan.</p>
             </div>
         </div>
