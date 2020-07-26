@@ -8,19 +8,84 @@
 
     section {
       min-height: 100vh;
-
+      //width: 100vh;
       padding: 5rem 10rem 5rem 10rem;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      max-width: 100vh;
+      width: 100%;
 
-      h1 {
-        font-size: 1rem;
+      &#contact {
+        min-height: 80vh;
       }
 
-      h2, h3 {
-        font-size: 3rem;
+      //h1 {
+      //  font-size: 1rem;
+      //}
+      //
+      //h2, h3 {
+      //  font-size: 3rem;
+      //}
+
+      //p {
+      //  width: 50%;
+      //}
+
+      .tech-stack {
+        display: flex;
       }
 
-      p {
-        width: 50%;
+      .work-history {
+        h4 {
+          margin-bottom: 0;
+        }
+
+        h5 {
+          margin-top: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--nav-secondary);
+          transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        }
+      }
+
+      .section-content-container {
+        display: flex;
+        justify-content: space-between;
+
+        .section-content {
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+        }
+
+        .about-img {
+          width: 40%;
+          padding: 1rem;
+          filter: grayscale(1);
+
+          &:hover {
+            filter: grayscale(0);
+          }
+
+          img {
+            width: 300px;
+            height: 300px;
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin-left: 0;
+        text-indent: -1em;
+
+        li::before {
+          content: '★';
+        }
       }
 
       .btn-container {
@@ -63,13 +128,14 @@
           display: none;
           flex-direction: column;
           margin-left: 1rem;
-
-          h1 {
-            margin: 0;
-          }
+          padding: 1.25rem;
 
           &.active {
             display: flex;
+          }
+
+          h1 {
+            margin: 0;
           }
         }
       }
@@ -94,6 +160,10 @@
   @media only screen and (max-width: 600px) {
     main {
       margin: 0;
+
+      section {
+        padding: 0;
+      }
     }
   }
 }

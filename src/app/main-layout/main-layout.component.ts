@@ -18,15 +18,4 @@ export class MainLayoutComponent implements OnInit {
     ngOnInit(): void {
         this.activeTab = this.oqas;
     }
-
-    tabMenuItemClick(event, item: string): void {
-        event.preventDefault();
-        event.stopPropagation();
-
-        this.activeTab = item;
-    }
-
-    tabActive(item: string) {
-        return this.activeTab === item;
-    }
 }
