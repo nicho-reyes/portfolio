@@ -1,9 +1,10 @@
 <header class="nav-parent">
-    <nav class="navbar">
+    <nav class="main-navigation" role="navigation">
         <ul class="navbar-nav">
             <li class="logo">
                 <a href="#" class="nav-link">
-                    <span class="logo-text">N</span>
+                    <!--<span class="logo-text">N</span>-->
+                    Nicho
                     <!--<img src="../../assets/img/logo.svg">-->
                 </a>
             </li>
@@ -40,3 +41,39 @@
         </ul>
     </nav>
 </header>
+<nav class="mobile-navigation" role="navigation">
+    <div id="menuToggle">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <li class="nav-item">
+                <a href="#about" class="nav-link">
+                    <i class="fa fa-2x fa-user" aria-hidden="true"></i> About Me
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#history" class="nav-link">
+                    <i class="fa fa-2x fa-history" aria-hidden="true"></i> Work History
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#work" class="nav-link">
+                    <i class="fa fa-2x fa-briefcase" aria-hidden="true"></i> Sample Works
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                    <i class="fa fa-2x fa-envelope" aria-hidden="true"></i> Contact Me
+                </a>
+            </li>
+
+            <li class="nav-item" style="height: 100vh">
+            </li>
+        </ul>
+    </div>
+</nav>
