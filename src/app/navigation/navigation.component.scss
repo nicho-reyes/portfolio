@@ -1,19 +1,30 @@
 /* Small screens */
 
 :host {
+  .nav-parent {
+    display: flex;
+    height: 100px;
+
+    //box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    box-shadow: var(--bg-secondary) 0px 10px 30px -10px;
+    transform: translateY(0px);
+    user-select: auto;
+    padding: 0px 3rem;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+
   .navbar {
-    position: fixed;
-    //background-color: var(--bg-primary);
-    background-color: var(--nav-primary);
+    //position: fixed;
     transition: width 600ms ease;
+    width: 100%;
 
     .navbar-nav {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      //flex-direction: column;
+      //align-items: center;
       height: 100%;
 
       .nav-link {
@@ -22,14 +33,10 @@
         height: 5rem;
         color: var(--text-primary);
         text-decoration: none;
-        filter: grayscale(100%) opacity(0.7);
+        //filter: grayscale(100%) opacity(0.7);
         transition: var(--transition-speed);
 
         &:hover {
-          filter: grayscale(0%) opacity(1);
-          background: var(--bg-secondary);
-          //background: var(--nav-secondary);
-          //color: var(--text-secondary);
           color: var(--nav-secondary);
         }
       }
@@ -37,14 +44,14 @@
       .logo {
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 1rem;
         text-align: center;
-        color: var(--text-secondary);
-        //background: var(--bg-secondary);
-        background-color: var(--nav-primary);
         font-size: 1.5rem;
         letter-spacing: 0.3ch;
-        width: 100%;
+        width: auto;
+
+        a {
+          height: 100%;
+        }
 
         svg {
           transform: rotate(0deg);
@@ -59,83 +66,97 @@
       }
 
       .nav-item {
-        width: 100%;
+        //width: 100%;
+
+        a {
+          height: 100%;
+        }
       }
     }
   }
 
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
   .nav-link {
     svg, i {
-      width: 2rem;
-      min-width: 2rem;
+      width: 1rem;
       margin: 0 1.5rem;
     }
   }
 
   .link-text {
-    display: none;
-    margin-left: 1rem;
+    //display: none;
+    //margin-left: 1rem;
+    margin-right: 1rem;
+    white-space: nowrap;
   }
 
   .logo-text {
     display: inline;
-    position: absolute;
-    font-size: 1rem;
-    left: -999px;
-    transition: var(--transition-speed);
+    padding: 1rem;
+    border: 1px solid red;
+    border-radius: 50px;
+    //position: absolute;
+    //font-size: 1rem;
+    //left: -999px;
+    //transition: var(--transition-speed);
   }
 
   /* Small screens */
   @media only screen and (max-width: 600px) {
-    .navbar {
-      bottom: 0;
-      width: 100vw;
-      height: 5rem;
-    }
-
-    .logo {
-      display: none;
-    }
-
-    .navbar-nav {
-      flex-direction: row;
-    }
-
-    .nav-link {
-      justify-content: center;
-    }
-
-    main {
-      margin: 0;
-    }
+    //.navbar {
+    //  bottom: 0;
+    //  width: 100vw;
+    //  height: 5rem;
+    //}
+    //
+    //.logo {
+    //  //display: none;
+    //}
+    //
+    //.navbar-nav {
+    //  flex-direction: row;
+    //}
+    //
+    //.nav-link {
+    //  justify-content: center;
+    //}
+    //
+    //main {
+    //  margin: 0;
+    //}
   }
 
   /* Large screens */
   @media only screen and (min-width: 600px) {
-    .navbar {
-      top: 0;
-      width: 5rem;
-      height: 100vh;
-    }
+    //.navbar {
+    //  top: 0;
+    //  width: 5rem;
+    //  height: 100vh;
+    //}
 
-    .navbar:hover {
-      width: 16rem;
-    }
-
-    .navbar:hover .link-text {
-      display: inline;
-    }
-
-    .navbar:hover {
-      .logo {
-        svg, i {
-          margin-left: 11rem;
-        }
-      }
-    }
-
-    .navbar:hover .logo-text {
-      left: 0px;
-    }
+    //.navbar:hover {
+    //  width: 16rem;
+    //}
+    //
+    //.navbar:hover .link-text {
+    //  display: inline;
+    //}
+    //
+    //.navbar:hover {
+    //  .logo {
+    //    svg, i {
+    //      margin-left: 11rem;
+    //    }
+    //  }
+    //}
+    //
+    //.navbar:hover .logo-text {
+    //  left: 0px;
+    //}
   }
 }

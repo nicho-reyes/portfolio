@@ -6,11 +6,4 @@ import {Component} from '@angular/core';
     styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
-
-    scrollAnchorToView(event, anchorId: string): void {
-        event.preventDefault();
-        event.stopPropagation();
-        document.getElementById(anchorId).scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
-    }
-
 }

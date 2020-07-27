@@ -6,6 +6,36 @@
     display: flex;
     flex-direction: column;
 
+    .some-links {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      position: fixed;
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      margin: 20px auto;
+      padding: 5rem;
+
+      &.left {
+        left: 0;
+      }
+
+      &.right {
+        right: 0;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        background-color: rgb(168, 178, 209);
+        margin: 0px auto;
+      }
+    }
+
     section {
       min-height: 100vh;
       //width: 100vh;
