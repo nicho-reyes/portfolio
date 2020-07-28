@@ -28,9 +28,9 @@
     <section id="home">
         <h3>Hello World! My name is</h3>
 
-        <span class="section-title">Nicho Reyes.</span>
+        <span class="intro-title">Nicho Reyes.</span>
         <br/>
-        <span class="section-sub-title">I solve problems and build solutions in the Web.</span>
+        <span class="intro-sub-title">I build solutions in the Web.</span>
 
         <p>
             I'm a software developer based in Manila, Philippines.
@@ -43,80 +43,123 @@
         <div class="btn-container">
             <a class="btn" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
         </div>
-
-        <!--
-        <div>
-            <h3>Hello World! My name is</h3>
-
-            <span class="section-title">Nicho Reyes.</span>
-            <br/>
-            <span class="section-sub-title">I solve problems and build solutions in the Web.</span>
-
-            <p>
-                I'm a software developer based in Manila, Philippines. I specialize in creating and building websites and
-                applications and anything in between.
-            </p>
-
-            <div class="btn-container">
-                <a class="btn" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
-            </div>
-        </div>
-
-        <div class="about-img">
-            <img src="../../assets/img/about.png">
-        </div>
-        -->
     </section>
 
     <section id="about">
-        <h1><i class="fa fa-user" aria-hidden="true"></i> About Me</h1>
+        <div class="section-title">
+            <h1><i class="fa fa-user" aria-hidden="true"></i> About Me</h1>
+        </div>
         <hr/>
         <div class="section-content-container">
             <div class="section-content">
-                <p>
-                    Hello! I'm Nicho, a software developer based in Manila, Philippines. I've been in the software
-                    development industry since
-                    2010.
-                </p>
+                <div class="left">
+                    <div class="about-img">
+                        <img src="../../assets/img/about.png">
+                    </div>
 
-                <p>
-                    I enjoy solving different set of problems and creating solutions that matter. Whether that is in
-                    form of a
-                    website or an application.
-                    My goal is to always deliver a production-ready solution with maximum user satisfaction in mind.
-                </p>
+                    <p>
+                        Hello! I'm Nicho, a software developer based in Manila, Philippines. I've been in the software
+                        development industry since
+                        2010.
+                    </p>
 
-                <p>
-                    Here are some of the few technologies I've been working with recently:
-                </p>
+                    <p>
+                        I have passion in solving different set of problems and creating solutions that matter.
+                        Whether that is in form of a website or an application.
+                        My goal is to always deliver a production-ready solution with maximum user satisfaction in mind.
+                    </p>
+                </div>
 
-                <div class="tech-stack">
-                    <div>
+                <div class="right">
+
+                    <div class="intro-sub-title section-sub-title">
+                        <i class="fa fa-code" aria-hidden="true"></i> Development
+                    </div>
+
+                    <div class="dev-items">
                         <ul>
-                            <li> Javascript</li>
-                            <li> HTML + CSS</li>
-                            <li> Java</li>
+                            <li class="dev-item-stack">
+                                JavaScript
+                            </li>
+                            <li class="dev-item-stack">
+                                HTML
+                            </li>
+                            <li class="dev-item-stack">
+                                CSS
+                            </li>
+                            <li class="dev-item-stack">
+                                Angular
+                            </li>
+                            <li class="dev-item-stack">
+                                C#
+                            </li>
+                            <li class="dev-item-stack">
+                                Java
+                            </li>
+                            <li class="dev-item-stack">
+                                Python
+                            </li>
                         </ul>
                     </div>
-                    <div>
-                        <ul>
-                            <li> C#</li>
-                            <li> Angular</li>
-                            <li> Node.js</li>
-                        </ul>
+
+
+                    <div class="dev-tools-knowledge">
+                        <div>
+                            <div class="intro-sub-title section-sub-title">
+                                <i class="fa fa-wrench" aria-hidden="true"></i> Tools
+                            </div>
+                            <div class="dev-items dev-item-tools">
+                                <ul>
+                                    <li class="dev-item-tool">
+                                        Chrome Developer Tools
+                                    </li>
+                                    <li class="dev-item-tool">
+                                        Command Line
+                                    </li>
+                                    <li class="dev-item-tool">
+                                        Docker
+                                    </li>
+                                    <li class="dev-item-tool">
+                                        Git + GitHub + GitLab
+                                    </li>
+                                    <li class="dev-item-tool">
+                                        InnoSetup
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="intro-sub-title section-sub-title">
+                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Knowledge
+                            </div>
+                            <div class="dev-items dev-item-tools">
+                                <ul>
+                                    <li class="dev-item-tool">
+                                        ECMAScript 6
+                                    </li>
+                                    <li class="dev-item-tool">
+                                        Usability
+                                    </li>
+                                    <li class="dev-item-tool">
+                                        TDD
+                                    </li>
+                                    <li class="dev-item-tool">
+                                        BDD
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="about-img">
-                <img src="../../assets/img/about.png">
             </div>
         </div>
 
     </section>
 
     <section id="history">
-        <h1><i class="fa fa-history" aria-hidden="true"></i> My Work History</h1>
+        <div class="section-title">
+            <h1><i class="fa fa-history" aria-hidden="true"></i> My Work History</h1>
+        </div>
         <hr/>
         <div class="work-history">
             <h4>Fullstack Developer <a href="https://outsourced.ph/" target="_blank">@ {{oqas}}</a></h4>
@@ -173,7 +216,9 @@
     </section>
 
     <section id="work">
-        <h1><i class="fa fa-briefcase" aria-hidden="true"></i> Work</h1>
+        <div class="section-title">
+            <h1><i class="fa fa-briefcase" aria-hidden="true"></i> Work</h1>
+        </div>
         <hr/>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -193,7 +238,9 @@
     </section>
 
     <section id="contact">
-        <h1><i class="fa fa-envelope" aria-hidden="true"></i> Get in touch</h1>
+        <div class="section-title">
+            <h1><i class="fa fa-envelope" aria-hidden="true"></i> Get in touch</h1>
+        </div>
         <hr/>
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -214,10 +261,8 @@
         <div class="btn-container">
             <a class="btn" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
         </div>
-
-        <footer>
-            Design inspired by <a href="https://brittanychiang.com/">Brittany Chiang</a>
-            Developed & Built by Nicho Reyes. All rights reserved.
-        </footer>
     </section>
 </main>
+<footer>
+    <span>Developed & Built by Nicho Reyes. All rights reserved.</span>
+</footer>
