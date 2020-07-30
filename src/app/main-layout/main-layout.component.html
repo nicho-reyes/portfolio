@@ -8,7 +8,7 @@
         <a href="https://www.linkedin.com/in/nicho-reyes/" target="_blank">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
         </a>
-        <a href="https://stackoverflow.com/users/3815123/mreggplant" target="_blank">
+        <a href="https://stackoverflow.com/users/3815123/nicho-reyes" target="_blank">
             <i class="fa fa-stack-overflow" aria-hidden="true"></i>
         </a>
         <a href="mailto:reyes.nicho@gmail.com" target="_blank">
@@ -17,252 +17,335 @@
     </div>
     <div></div>
 </div>
+
 <div class="other-links right">
-    <div>
-        <a href="mailto:reyes.nicho@gmail.com">reyes.nicho@gmail.com</a>
-    </div>
-    <div></div>
+    <ul>
+        <li class="sub-nav">
+            <a href="#intro">
+                <span class="dot" [ngClass]="{'active': currentActive === 0}"></span>
+                <span class="sub-nav-label">Intro</span>
+            </a>
+        </li>
+        <li class="sub-nav">
+            <a href="#about">
+                <span class="dot" [ngClass]="{'active': currentActive === 1}"></span>
+                <span class="sub-nav-label">About</span>
+            </a>
+        </li>
+        <li class="sub-nav">
+            <a href="#history">
+                <span class="dot" [ngClass]="{'active': currentActive === 2}"></span>
+                <span class="sub-nav-label">Experience</span>
+            </a>
+        </li>
+        <li class="sub-nav"><a href="#work">
+            <span class="dot" [ngClass]="{'active': currentActive === 3}"></span> <span
+                class="sub-nav-label">Work</span>
+        </a>
+        </li>
+        <li class="sub-nav">
+            <a href="#contact">
+                <span class="dot" [ngClass]="{'active': currentActive === 4}"></span>
+                <span class="sub-nav-label">Contact</span>
+            </a>
+        </li>
+        <br>
+        <li class="sub-nav">
+            <div class="theme-container">
+                <div class="light" title="view in light mode">
+                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                </div>
+                <div class="toggle-wrapper">
+                    <input id="switch" type="checkbox" (change)="themeChange()">
+                    <label for="switch" id="toggle"></label>
+                </div>
+                <div class="dark" title="view in dark mode">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div>
 
-<main>
-    <section id="home">
-        <h3>Hello World! My name is</h3>
-
-        <span class="intro-title">Nicho Reyes.</span>
-        <br/>
-        <span class="intro-sub-title">I build solutions in the Web.</span>
-
-        <p>
-            I'm a software developer based in Manila, Philippines.
-        </p>
-
-        <p>
-            I specialize in creating and building software, websites, applications and anything in between.
-        </p>
-
-        <div class="btn-container">
-            <a class="btn" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="section-title">
-            <h1><i class="fa fa-user" aria-hidden="true"></i> About Me</h1>
-        </div>
-        <hr/>
-        <div class="section-content-container">
-            <div class="section-content">
-                <div class="left">
-                    <div class="about-img">
-                        <img src="../../assets/img/about.png">
+<div class="main-content">
+    <div id="intro" class="section" #intro>
+        <div class="section-main-content">
+            <div class="intro-container">
+                <br/>
+                <h3>Hello World! My name is</h3>
+                <br/>
+                <h1>Nicho Reyes.</h1>
+                <h2>I build things in the Web.</h2>
+                <br/>
+                <br/>
+                <div class="intro-content">
+                    <div>
+                        <p>
+                            I'm a software developer based in Manila, Philippines.
+                        </p>
+                        <br>
+                        <p>
+                            I like solving problems and doing innovations in the web.
+                        </p>
+                        <br>
+                        <p>
+                            I specialize in creating and building software, websites, applications and anything in
+                            between.
+                        </p>
                     </div>
+                    <br><br><br>
 
-                    <p>
-                        Hello! I'm Nicho, a software developer based in Manila, Philippines. I've been in the software
-                        development industry since
-                        2010.
-                    </p>
-
-                    <p>
-                        I have passion in solving different set of problems and creating solutions that matter.
-                        Whether that is in form of a website or an application.
-                        My goal is to always deliver a production-ready solution with maximum user satisfaction in mind.
-                    </p>
+                    <a class="link-button" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="right">
-
-                    <div class="intro-sub-title section-sub-title">
-                        <i class="fa fa-code" aria-hidden="true"></i> Development
-                    </div>
-
-                    <div class="dev-items">
-                        <ul>
-                            <li class="dev-item-stack">
-                                JavaScript
-                            </li>
-                            <li class="dev-item-stack">
-                                HTML
-                            </li>
-                            <li class="dev-item-stack">
-                                CSS
-                            </li>
-                            <li class="dev-item-stack">
-                                Angular
-                            </li>
-                            <li class="dev-item-stack">
-                                C#
-                            </li>
-                            <li class="dev-item-stack">
-                                Java
-                            </li>
-                            <li class="dev-item-stack">
-                                Python
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="dev-tools-knowledge">
-                        <div>
-                            <div class="intro-sub-title section-sub-title">
-                                <i class="fa fa-wrench" aria-hidden="true"></i> Tools
-                            </div>
-                            <div class="dev-items dev-item-tools">
-                                <ul>
-                                    <li class="dev-item-tool">
-                                        Chrome Developer Tools
-                                    </li>
-                                    <li class="dev-item-tool">
-                                        Command Line
-                                    </li>
-                                    <li class="dev-item-tool">
-                                        Docker
-                                    </li>
-                                    <li class="dev-item-tool">
-                                        Git + GitHub + GitLab
-                                    </li>
-                                    <li class="dev-item-tool">
-                                        InnoSetup
-                                    </li>
-                                </ul>
-                            </div>
+    <div class="section" id="about" #about>
+        <div class="section-main-content">
+            <hr/>
+            <div class="section-title">
+                <h1><span class="nav-order">i.</span> About Me</h1>
+            </div>
+            <div class="section-content-container">
+                <div class="section-content">
+                    <div class="left">
+                        <div class="about-img">
+                            <img src="../../assets/img/about.png">
                         </div>
-                        <div>
-                            <div class="intro-sub-title section-sub-title">
-                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Knowledge
+
+                        <p>
+                            Hello! I'm Nicho, a software developer based in Manila, Philippines. I've been in the
+                            software
+                            development industry since
+                            2010.
+                        </p>
+                        <br>
+                        <p>
+                            I have passion in solving different set of problems and creating solutions that matter.
+                            Whether that is in form of a website or an application.
+                            My goal is to always deliver a production-ready solution with maximum user satisfaction in
+                            mind.
+                        </p>
+                    </div>
+
+                    <div class="section-sub-content right">
+
+                        <h1>
+                            <i class="fa fa-code" aria-hidden="true"></i> Development
+                        </h1>
+
+                        <div class="dev-items">
+                            <ul>
+                                <li class="dev-item-stack">
+                                    JavaScript
+                                </li>
+                                <li class="dev-item-stack">
+                                    HTML
+                                </li>
+                                <li class="dev-item-stack">
+                                    CSS
+                                </li>
+                                <li class="dev-item-stack">
+                                    Angular
+                                </li>
+                                <li class="dev-item-stack">
+                                    C#
+                                </li>
+                                <li class="dev-item-stack">
+                                    Java
+                                </li>
+                                <li class="dev-item-stack">
+                                    Python
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="dev-tools-knowledge">
+                            <div>
+                                <h1>
+                                    <i class="fa fa-wrench" aria-hidden="true"></i> Tools
+                                </h1>
+                                <div class="dev-items dev-item-tools">
+                                    <ul>
+                                        <li class="dev-item-tool">
+                                            Chrome Developer Tools
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            Command Line
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            Docker
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            Git
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            InnoSetup
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="dev-items dev-item-tools">
-                                <ul>
-                                    <li class="dev-item-tool">
-                                        ECMAScript 6
-                                    </li>
-                                    <li class="dev-item-tool">
-                                        Usability
-                                    </li>
-                                    <li class="dev-item-tool">
-                                        TDD
-                                    </li>
-                                    <li class="dev-item-tool">
-                                        BDD
-                                    </li>
-                                </ul>
+                            <div>
+                                <h1>
+                                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i> Knowledge
+                                </h1>
+                                <div class="dev-items dev-item-tools">
+                                    <ul>
+                                        <li class="dev-item-tool">
+                                            ECMAScript 6
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            Usability
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            TDD
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            BDD
+                                        </li>
+                                        <li class="dev-item-tool">
+                                            Scrum
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <div class="section" id="history" #history>
+        <div class="section-main-content">
+            <hr/>
+            <div class="section-title">
+                <h1><span class="nav-order">ii.</span> My Work History</h1>
+            </div>
+            <div class="work-history">
+                <h4>Fullstack Developer <span class="work-history-item">@ <a href="https://outsourced.ph/"
+                                                                             target="_blank">{{oqas}}</a></span>
+                </h4>
+                <h5>June 2018 - Present</h5>
+                <ul>
+                    <li> Write highly performant, maintenanable and up-to-date code for <a href="https://tribuna.ch"
+                                                                                           target="_blank">TribunaV4</a>
+                    </li>
+                    <li>
+                        Performs code reviews
+                    </li>
+                    <li>
+                        Improve the interaction between Frontend and Backend teams and make suggestions to diminish the
+                        coupling.
+                    </li>
+                    <li> Responsible that always the latest and greatest Angular version is used and mentor less
+                        experienced developers
+                    </li>
+                    <li> Responsible for GitLab administration</li>
+                </ul>
 
-    <section id="history">
-        <div class="section-title">
-            <h1><i class="fa fa-history" aria-hidden="true"></i> My Work History</h1>
+                <h4>Software Developer <span class="work-history-item">@ <a>{{tworks}}</a></span></h4>
+                <h5>June 2014 - June 2018</h5>
+                <ul>
+                    <!--<li> Assess & provide estimates for technical considerations and requirements.</li>-->
+                    <!--<li> Collaborate with product managers and engineering colleagues to deliver impactful product-->
+                    <!--initiatives.-->
+                    <!--</li>-->
+                    <!--<li> Creation of design documents based on specifications.</li>-->
+                    <!--<li> Create unit and integration tests</li>-->
+                </ul>
+
+                <h4>Business Applications Engineer <span class="work-history-item">@ <a
+                        href="https://www.trendmicro.com/"
+                        target="_blank">{{tm}}</a></span>
+                </h4>
+                <h5>June 2012 - June 2014</h5>
+                <ul>
+                    <!--<li> .Net Framework 1.0 -> 4.0 Upgrade</li>-->
+                    <!--<li> Sustain legacy systems (built in vbscript, asp classic)</li>-->
+                    <!--<li> Migration of on-premise solutions to cloud</li>-->
+                    <!--<li> MS Outlook Integration</li>-->
+                    <!--<li> Microsoft Dynamics Navision</li>-->
+                </ul>
+
+                <h4>Software Engineer <span class="work-history-item">@ <a href="https://www.smartmatic.com/"
+                                                                           target="_blank">{{smartmatic}}</a></span>
+                </h4>
+                <h5>February 2012 - June 2012</h5>
+                <ul>
+                    <!--<li> Project-based collaboration to develop <a-->
+                    <!--href="https://www.smartmatic.com/media/article/smartmatic-launches-the-unified-security-platform/"-->
+                    <!--target="_blank">USP (Unified Security Platform)</a></li>-->
+                </ul>
+
+                <h4>.Net Developer <span class="work-history-item">@ <a href="https://sdsolutions.com.ph/"
+                                                                        target="_blank">{{sds}}</a></span>
+                </h4>
+                <h5>November 2010 - February 2012</h5>
+                <ul>
+                    <!--<li> System Design & Development for Web & Windows-based applications using Microsoft Technologies.</li>-->
+                </ul>
+                <br>
+                <div class="resume-container">
+                    <span>View my Resume <i class="fa fa-2x fa-hand-o-right" aria-hidden="true"></i></span>
+                    <a class="link-button" target="_blank" href="../../assets/static/resume.pdf">Resume</a>
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
-        <hr/>
-        <div class="work-history">
-            <h4>Fullstack Developer <a href="https://outsourced.ph/" target="_blank">@ {{oqas}}</a></h4>
-            <h5>June 2018 - Present</h5>
-            <ul>
-                <li> Write highly performant, maintenanable and up-to-date code for <a href="https://tribuna.ch"
-                                                                                       target="_blank">TribunaV4</a>
-                </li>
-                <li>
-                    Performs code reviews
-                </li>
-                <li>
-                    Improve the interaction between Frontend and Backend teams and make suggestions to diminish the
-                    coupling.
-                </li>
-                <li> Responsible that always the latest and greatest Angular version is used and mentor less
-                    experienced developers
-                </li>
-                <li> Responsible for GitLab administration</li>
-            </ul>
+    </div>
 
-            <h4>Software Developer <a>@ {{tworks}}</a></h4>
-            <h5>June 2014 - June 2018</h5>
-            <ul>
-                <li> Writes</li>
-                <li> a 2</li>
-                <li> a 3</li>
-            </ul>
-
-            <h4>Business Applications Engineer <a href="https://www.trendmicro.com/" target="_blank">@ {{tm}}</a></h4>
-            <h5>June 2012 - June 2014</h5>
-            <ul>
-                <li> .Net Framework 1.0 -> 4.0 Upgrade</li>
-                <li> Sustain legacy systems (built in vbscript, asp classic)</li>
-                <li> Migration of on-premise solutions to cloud</li>
-                <li> MS Outlook Integration</li>
-                <li> Microsoft Dynamics Navision</li>
-            </ul>
-
-            <h4>Software Engineer <a href="https://www.smartmatic.com/" target="_blank">@ {{smartmatic}}</a></h4>
-            <h5>February 2012 - June 2012</h5>
-            <ul>
-                <li> Project-based collaboration to develop <a
-                        href="https://www.smartmatic.com/media/article/smartmatic-launches-the-unified-security-platform/"
-                        target="_blank">USP (Unified Security Platform)</a></li>
-            </ul>
-
-            <h4>.Net Developer <a href="https://sdsolutions.com.ph/" target="_blank">@ {{sds}}</a></h4>
-            <h5>November 2010 - February 2012</h5>
-            <ul>
-                <li> System Design & Development for Web & Windows-based applications using Microsoft Technologies.</li>
-            </ul>
+    <div class="section" id="work" #work>
+        <div class="section-main-content">
+            <hr/>
+            <div class="section-title">
+                <h1><span class="nav-order">iii.</span> My Works</h1>
+            </div>
+            <div class="coming-soon">
+                <br>
+                <h1>COMING SOON</h1>
+                <br>
+                <h2>Work in progress <i class="fa fa-smile-o"></i></h2>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section id="work">
-        <div class="section-title">
-            <h1><i class="fa fa-briefcase" aria-hidden="true"></i> Work</h1>
-        </div>
-        <hr/>
-        <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-            justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
-            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-            nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
-            sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis
-            ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-            sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-        </p>
-    </section>
+    <div class="section contact" #contact>
+        <div class="section-main-content">
+            <div>
+                <hr/>
+                <div class="section-title">
+                    <h1><span class="nav-order">iv.</span> Let's talk!</h1>
+                </div>
+                <p>
+                    I'm always open for interesting projects and/or opportunities, feel free to shoot me an email!
+                </p>
 
-    <section id="contact">
-        <div class="section-title">
-            <h1><i class="fa fa-envelope" aria-hidden="true"></i> Get in touch</h1>
+                <br>
+                <br>
+                <a class="link-button" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
+            </div>
         </div>
-        <hr/>
-        <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-            fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-            justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
-            nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-            laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
-            nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
-            sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis
-            ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-            sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-        </p>
+    </div>
+</div>
 
-        <div class="btn-container">
-            <a class="btn" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
-        </div>
-    </section>
-</main>
-<footer>
+<footer id="contact">
     <span>Developed & Built by Nicho Reyes. All rights reserved.</span>
+    <div>
+        <a href="https://github.com/nicho-reyes" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nicho-reyes/" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://stackoverflow.com/users/3815123/nicho-reyes" target="_blank">
+            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:reyes.nicho@gmail.com" target="_blank">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+    </div>
 </footer>
