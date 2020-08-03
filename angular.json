@@ -119,8 +119,13 @@
               "devServerTarget": "nick-portfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "nick-portfolio"
 }

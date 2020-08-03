@@ -5,13 +5,17 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {MainLayoutComponent} from './main-layout/main-layout.component';
 import {RouterModule} from '@angular/router';
-import { NavigationComponent } from './navigation/navigation.component';
+import {NavigationComponent} from './navigation/navigation.component';
+import {LinksComponent} from './links/links.component';
+import {WorkHistoryComponent} from './work-history/work-history.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         MainLayoutComponent,
-        NavigationComponent
+        NavigationComponent,
+        LinksComponent,
+        WorkHistoryComponent
     ],
     imports: [
         BrowserModule,

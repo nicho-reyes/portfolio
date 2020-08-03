@@ -1,0 +1,35 @@
+:host ::ng-deep {
+  .other-links {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    margin: 20rem 1rem;
+
+    div {
+      display: flex;
+
+      a {
+        padding: 1rem;
+
+        &:hover {
+          transform: scale(1.1) translate(0px, -3px);
+          transition: all var(--transition-speed);
+        }
+      }
+
+      &:last-child {
+        height: 50rem;
+        border: 1px solid var(--text-primary);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .other-links:not(.right) {
+      display: none;
+    }
+  }
+}

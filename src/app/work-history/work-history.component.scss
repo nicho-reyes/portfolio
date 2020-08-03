@@ -1,0 +1,44 @@
+:host ::ng-deep {
+  .work-history {
+    padding: 1rem;
+
+    .work-history-item {
+      color: var(--link-secondary);
+
+      a {
+        color: var(--link-primary);
+        font-weight: bold;
+
+        &:hover {
+          color: var(--link-secondary);
+        }
+      }
+    }
+
+    ul {
+      padding: 1rem;
+
+      li {
+        padding-left: 1rem;
+        span {
+          padding-left: .5rem;
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    h5 {
+      margin-top: 0;
+      color: var(--text-secondary);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    }
+  }
+}

@@ -1,109 +1,39 @@
-<app-navigation></app-navigation>
+<app-navigation [aboutOffset]="aboutOffset" [contactOffset]="contactOffset" [historyOffset]="historyOffset"
+                [introOffset]="introOffset"></app-navigation>
 
-<div class="other-links">
-    <div>
-        <a href="https://github.com/nicho-reyes" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/nicho-reyes/" target="_blank">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="https://stackoverflow.com/users/3815123/nicho-reyes" target="_blank">
-            <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-        </a>
-        <a href="mailto:reyes.nicho@gmail.com" target="_blank">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
-    </div>
-    <div></div>
-</div>
-
-<div class="other-links right">
-    <ul>
-        <li class="sub-nav">
-            <a href="#intro">
-                <span class="dot" [ngClass]="{'active': currentActive === 0}"></span>
-                <span class="sub-nav-label">Intro</span>
-            </a>
-        </li>
-        <li class="sub-nav">
-            <a href="#about">
-                <span class="dot" [ngClass]="{'active': currentActive === 1}"></span>
-                <span class="sub-nav-label">About</span>
-            </a>
-        </li>
-        <li class="sub-nav">
-            <a href="#history">
-                <span class="dot" [ngClass]="{'active': currentActive === 2}"></span>
-                <span class="sub-nav-label">Experience</span>
-            </a>
-        </li>
-        <li class="sub-nav"><a href="#work">
-            <span class="dot" [ngClass]="{'active': currentActive === 3}"></span> <span
-                class="sub-nav-label">Work</span>
-        </a>
-        </li>
-        <li class="sub-nav">
-            <a href="#contact">
-                <span class="dot" [ngClass]="{'active': currentActive === 4}"></span>
-                <span class="sub-nav-label">Contact</span>
-            </a>
-        </li>
-        <br>
-        <li class="sub-nav">
-            <div class="theme-container">
-                <div class="light" title="view in light mode">
-                    <i class="fa fa-sun-o" aria-hidden="true"></i>
-                </div>
-                <div class="toggle-wrapper">
-                    <input id="switch" type="checkbox" (change)="themeChange()">
-                    <label for="switch" id="toggle"></label>
-                </div>
-                <div class="dark" title="view in dark mode">
-                    <i class="fa fa-moon-o" aria-hidden="true"></i>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
+<app-links></app-links>
 
 <div class="main-content">
     <div id="intro" class="section" #intro>
         <div class="section-main-content">
             <div class="intro-container">
                 <br/>
-                <h3>Hello World! My name is</h3>
+                <div class="intro-sub-title">Hello World! My name is</div>
                 <br/>
-                <h1>Nicho Reyes.</h1>
-                <h2>I build things in the Web.</h2>
+                <div class="title">Nicho Reyes.</div>
+                <div class="title-description">I build things in the Web.</div>
                 <br/>
                 <br/>
-                <div class="intro-content">
+                <div class="description">
                     <div>
-                        <p>
-                            I'm a software developer based in Manila, Philippines.
-                        </p>
+                        I'm a software developer based in Manila, Philippines.
                         <br>
-                        <p>
-                            I like solving problems and doing innovations in the web.
-                        </p>
+                        I like solving problems and doing innovations in the web.
                         <br>
-                        <p>
-                            I specialize in creating and building software, websites, applications and anything in
-                            between.
-                        </p>
+                        I specialize in creating and building software, websites, applications and anything in
+                        between.
                     </div>
-                    <br><br><br>
-
-                    <a class="link-button" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
+                    <div>
+                    </div>
                 </div>
+
+                <a class="link-button" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
             </div>
         </div>
     </div>
 
     <div class="section" id="about" #about>
         <div class="section-main-content">
-            <hr/>
             <div class="section-title">
                 <h1><span class="nav-order">i.</span> About Me</h1>
             </div>
@@ -220,119 +150,31 @@
 
     <div class="section" id="history" #history>
         <div class="section-main-content">
-            <hr/>
-            <div class="section-title">
-                <h1><span class="nav-order">ii.</span> My Work History</h1>
-            </div>
-            <div class="work-history">
-                <h4>Fullstack Developer <span class="work-history-item">@ <a href="https://outsourced.ph/"
-                                                                             target="_blank">{{oqas}}</a></span>
-                </h4>
-                <h5>June 2018 - Present</h5>
-                <ul>
-                    <li> Write highly performant, maintenanable and up-to-date code for <a href="https://tribuna.ch"
-                                                                                           target="_blank">TribunaV4</a>
-                    </li>
-                    <li>
-                        Performs code reviews
-                    </li>
-                    <li>
-                        Improve the interaction between Frontend and Backend teams and make suggestions to diminish the
-                        coupling.
-                    </li>
-                    <li> Responsible that always the latest and greatest Angular version is used and mentor less
-                        experienced developers
-                    </li>
-                    <li> Responsible for GitLab administration</li>
-                </ul>
-
-                <h4>Software Developer <span class="work-history-item">@ <a>{{tworks}}</a></span></h4>
-                <h5>June 2014 - June 2018</h5>
-                <ul>
-                    <!--<li> Assess & provide estimates for technical considerations and requirements.</li>-->
-                    <!--<li> Collaborate with product managers and engineering colleagues to deliver impactful product-->
-                    <!--initiatives.-->
-                    <!--</li>-->
-                    <!--<li> Creation of design documents based on specifications.</li>-->
-                    <!--<li> Create unit and integration tests</li>-->
-                </ul>
-
-                <h4>Business Applications Engineer <span class="work-history-item">@ <a
-                        href="https://www.trendmicro.com/"
-                        target="_blank">{{tm}}</a></span>
-                </h4>
-                <h5>June 2012 - June 2014</h5>
-                <ul>
-                    <!--<li> .Net Framework 1.0 -> 4.0 Upgrade</li>-->
-                    <!--<li> Sustain legacy systems (built in vbscript, asp classic)</li>-->
-                    <!--<li> Migration of on-premise solutions to cloud</li>-->
-                    <!--<li> MS Outlook Integration</li>-->
-                    <!--<li> Microsoft Dynamics Navision</li>-->
-                </ul>
-
-                <h4>Software Engineer <span class="work-history-item">@ <a href="https://www.smartmatic.com/"
-                                                                           target="_blank">{{smartmatic}}</a></span>
-                </h4>
-                <h5>February 2012 - June 2012</h5>
-                <ul>
-                    <!--<li> Project-based collaboration to develop <a-->
-                    <!--href="https://www.smartmatic.com/media/article/smartmatic-launches-the-unified-security-platform/"-->
-                    <!--target="_blank">USP (Unified Security Platform)</a></li>-->
-                </ul>
-
-                <h4>.Net Developer <span class="work-history-item">@ <a href="https://sdsolutions.com.ph/"
-                                                                        target="_blank">{{sds}}</a></span>
-                </h4>
-                <h5>November 2010 - February 2012</h5>
-                <ul>
-                    <!--<li> System Design & Development for Web & Windows-based applications using Microsoft Technologies.</li>-->
-                </ul>
-                <br>
-                <div class="resume-container">
-                    <span>View my Resume <i class="fa fa-2x fa-hand-o-right" aria-hidden="true"></i></span>
-                    <a class="link-button" target="_blank" href="../../assets/static/resume.pdf">Resume</a>
-                </div>
-            </div>
-            <br>
-            <br>
-        </div>
-    </div>
-
-    <div class="section" id="work" #work>
-        <div class="section-main-content">
-            <hr/>
-            <div class="section-title">
-                <h1><span class="nav-order">iii.</span> My Works</h1>
-            </div>
-            <div class="coming-soon">
-                <br>
-                <h1>COMING SOON</h1>
-                <br>
-                <h2>Work in progress <i class="fa fa-smile-o"></i></h2>
-            </div>
+            <app-work-history></app-work-history>
         </div>
     </div>
 
     <div class="section contact" #contact>
-        <div class="section-main-content">
+        <div class="section-main-content" id="contact">
             <div>
-                <hr/>
                 <div class="section-title">
-                    <h1><span class="nav-order">iv.</span> Let's talk!</h1>
+                    <h1><span class="nav-order">iii.</span> Let's stop being strangers!</h1>
                 </div>
                 <p>
-                    I'm always open for interesting projects and/or opportunities, feel free to shoot me an email!
+                    I'm always open for interesting projects and/or opportunities, feel free to send me a mail 😀
                 </p>
 
                 <br>
                 <br>
-                <a class="link-button" href="mailto:reyes.nicho@gmail.com">Get in touch</a>
+                <a class="link-button" href="mailto:reyes.nicho@gmail.com">
+                    <button>Say Hello</button>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
-<footer id="contact">
+<footer>
     <span>Developed & Built by Nicho Reyes. All rights reserved.</span>
     <div>
         <a href="https://github.com/nicho-reyes" target="_blank">
